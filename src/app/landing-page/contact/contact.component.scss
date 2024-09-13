@@ -1,0 +1,247 @@
+@import './../../../styles.scss';
+
+.contact {
+    background-color: #141D2F;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    >.greenThemeImg {
+        position: absolute;
+        right: -415px;
+        top: -120px;
+    }
+}
+
+.headlineContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 32px;
+
+    >h2 {
+        margin: 0;
+    }
+
+    >.greenLine {
+        width: 40%;
+        height: 5px;
+        background-color: #70E61C;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.contentContainer {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 64px;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 32px;
+    z-index: 101;
+
+    >.subHeadLineContainer {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        >.purpleLine {
+            width: 84px;
+            height: 5px;
+            background-color: $purpleTheme;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        >h3 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+
+    >.textContainer {
+        margin-left: 112px;
+
+        >.contactMeContainter {
+            display: flex;
+            gap: 8px;
+        }
+    }
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 50%;
+    z-index: 101;
+
+    >.ppAgreeContainer {
+        display: flex;
+        gap: 16px;
+        width: 80%;
+
+        >.checkbox {
+            width: 24px;
+            height: 24px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        >.ppAgreeText {
+            font-size: 14px;
+        }
+    }
+
+    >.submitButton {
+        width: max-content;
+        border-radius: 10px;
+        padding: 15px 30px 15px 30px;
+        color: white;
+        background-color: grey;
+        border: none;
+        font-size: 23px;
+
+        &.checked{
+            background-color: $greenTheme;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.ppImportant{
+    font-weight: bold;
+    color: $purpleTheme;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    border-radius: 10px;
+    background-color: #141D2F;
+    border: 1px solid $purpleTheme;
+    border-radius: 10px;
+    padding-left: 16px;
+    color: white;
+}
+
+form input {
+    height: 50px;
+}
+
+form textarea {
+    height: 200px;
+    padding-top: 16px;
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .contactInfoContainer {
+        width: 100%;
+
+        >.textContainer {
+            width: 80%;
+        }
+    }
+
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInfoContainer {
+        >.subHeadLineContainer {
+            width: 100%;
+        }
+    }
+
+    .inputContainer {
+        width: 80%;
+        align-items: center;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width:750px) {
+    .contact {
+        >.greenThemeImg {
+            width: 850px;
+            right: -415px;
+            top: -120px;
+        }
+    }
+}
+
+@media (max-width:550px) {
+    .contact {
+        >.greenThemeImg {
+            width: 650px;
+            right: -415px;
+            top: -120px;
+        }
+    }
+
+    .headlineContainer {
+        >.greenLine {
+            width: 20%;
+        }
+    }
+
+    .contactInfoContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+        z-index: 101;
+
+        >.subHeadLineContainer {
+            >.purpleLine {
+                display: none;
+            }
+
+            >h3 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        >.textContainer {
+            margin-left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            >span {
+                display: flex;
+                text-align: center;
+                width: 80%;
+            }
+
+            >.contactMeContainter {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+        }
+    }
+}

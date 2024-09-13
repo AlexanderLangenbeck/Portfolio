@@ -1,0 +1,54 @@
+@import './../../../../styles.scss';
+
+.welcomeFooter {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 32px;
+    display: flex;
+    margin-top: 500px;
+    align-items: center;
+    gap: 64px;
+
+    >a {
+        text-decoration: none;
+        color: white;
+        font-size: 32px;
+
+        >img {
+            &:hover {
+                width: 32px;
+                height: 32px;
+                filter: brightness(0.5);
+            }
+        }
+    }
+
+    >.linkBox {
+        display: flex;
+        width: 220px;
+        justify-content: space-between;
+    }
+
+    >.lineContainer {
+        width: 10%;
+
+        >.prupleLine {
+            background-color: $purpleTheme;
+            height: 4px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .welcomeFooter{
+        width: 80%;
+        >.mail{
+            display: none;
+        }
+        >.lineContainer {
+            width: 30%;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<section>
+    <img class="imgTheme purpleThemeImg" src="./../../../assets/img/purpleTheme2.png" alt="">
+    <h2>Portfolio</h2>
+    <span>
+        Explore a selection of my work here -
+        interact with projects to see my skills in action
+    </span>
+    <div class="projectsContainer">
+        <div class="projects" *ngFor="let project of myProjects.projects; let i = index; trackBy: trackByProjectTitle">
+            <ng-container *ngIf="i % 2 === 0">
+                <img src="assets/img/{{project.img}}" alt="">
+                <div class="textPart">
+                    <div class="title">{{project.title}}</div>
+                    <div class="skills">{{project.skills}}</div>
+                    <div class="description">{{project.description}}</div>
+                    <div class="buttonContainer">
+                        <a>Live test</a>
+                        <a href="https://github.com/AlexanderLangenbeck/Join" class="gitHubButton">Github</a>
+                    </div>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="i % 2 !== 0">
+                <div class="textPart">
+                    <div class="title">{{project.title}}</div>
+                    <div class="skills">{{project.skills}}</div>
+                    <div class="description">{{project.description}}</div>
+                    <div class="buttonContainer">
+                        <a>Live test</a>
+                        <a href="https://github.com/AlexanderLangenbeck/El-Pollo-Loco" class="gitHubButton">Github</a>
+                    </div>
+                </div>
+                <img src="assets/img/{{project.img}}" alt="">
+            </ng-container>
+        </div>
+    </div>
+</section>

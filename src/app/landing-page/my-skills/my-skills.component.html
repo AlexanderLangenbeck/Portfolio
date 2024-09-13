@@ -1,0 +1,24 @@
+<section class="mySkills">
+    <section class="iconSection">
+        @for(skill of mySkills.skills; track skill.name){
+            
+        <div class="skillBox">
+            <img class="icon" src="assets/img/{{skill.img}}" alt="">
+            <div>{{skill.name}}</div>
+        </div>
+        }
+    </section>
+    <section class="textSection">
+        <h2>My skills</h2>
+        <span>
+            I have gained experience in building projects with diffrent<br>
+            frontend technologies and concrepts.
+        </span>
+        <h3>Looking for <span class="purpleTheme">another skill</span>?</h3>
+        <span>
+            Feel free to contact me. I look forward to expanding <br>
+            on my previous knoledge
+        </span>
+        <a href="#contact" class="giTButton">Get in touch</a>
+    </section>
+</section>

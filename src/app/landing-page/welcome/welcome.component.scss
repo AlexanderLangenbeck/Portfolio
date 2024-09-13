@@ -1,0 +1,218 @@
+@import './../../../styles.scss';
+
+.welcome {
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0px;
+
+    >.profileArea {
+        margin-top: 128px;
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        color: white;
+    }
+}
+
+
+.welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    width: 80%;
+    padding-top: 128px;
+
+    >.imgTheme {
+        position: absolute;
+        width: 816px;
+        top: 102px;
+    }
+
+    .purpleThemeImg {
+        right: -500px;
+    }
+
+    .greenThemeImg {
+        left: -522px;
+    }
+}
+
+.welcomeText {
+    z-index: 101;
+    display: flex;
+
+    >.headlineStart {
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 90px;
+    }
+
+    >.verticalText {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    >.headline {
+        display: flex;
+        flex-direction: column;
+
+        >.fullName {
+            font-family: 'Poppins';
+            font-size: 90px;
+            font-weight: 700;
+        }
+
+        >.jobTitle {
+            font-size: 58px;
+            font-weight: 400;
+        }
+    }
+}
+
+.buttonConainer {
+    display: flex;
+    justify-content: center;
+    z-index: 101;
+
+    >.button {
+        padding: 15px 30px 15px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: $greenTheme;
+        color: white;
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $purpleTheme;
+        }
+    }
+}
+
+@media only screen and (max-width: 1560px){
+    .welcomeText{
+        >.headlineStart {
+            font-size: 80px;
+        }
+        >.headline{
+            >.fullName{
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1460px){
+    .welcomeText{
+        >.headlineStart {
+            font-size: 70px;
+        }
+        >.headline{
+            >.fullName{
+                font-size: 70px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1255px){
+    .welcomeText{
+        >.headlineStart {
+            font-size: 50px;
+        }
+        >.headline{
+            >.fullName{
+                font-size: 50px;
+            }
+            >.jobTitle {
+                font-size: 38px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .welcomeText{
+        >.headlineStart {
+            font-size: 40px;
+        }
+        >.headline{
+            >.fullName{
+                font-size: 40px;
+            }
+            >.jobTitle {
+                font-size: 28px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width:750px){
+    .welcomeContainer {
+    
+        >.imgTheme {
+            width: 550px;
+            top: 102px;
+        }
+    
+        .purpleThemeImg {
+            right: -290px;
+        }
+    
+        .greenThemeImg {
+            left: -380px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .welcomeText{
+        >.headlineStart {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        >.headline{
+            >.fullName{
+                font-size: 30px;
+            }
+            >.jobTitle {
+                font-weight: bold;
+                font-size: 18px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width:500px){
+    .welcomeContainer {
+        >.imgTheme {
+            width: 400px;
+        }
+        .greenThemeImg {
+            left: -280px;
+        }
+        >.welcomeText{
+            >.headlineStart {
+                font-size: 20px;
+            }
+            >.headline{
+                >.fullName{
+                    font-size: 20px;
+                }
+                >.jobTitle {
+                    font-size: 18px;
+                }
+                
+            }
+        }
+    
+    }
+}

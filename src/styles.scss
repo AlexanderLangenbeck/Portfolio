@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+$greenTheme: #70E61C; 
+$purpleTheme: #9747FF;
+
+*{
+    scroll-behavior: smooth !important;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #141D2F;
+    color:white;
+}
+
+h2{
+    font-size: 90px;
+}
+
+section{
+    width:100%;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+.greenTheme {
+    color: #70E61C;
+}
+
+.purpleTheme {
+    color: #9747FF;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1255px){
+    h2{
+        font-size: 70px;
+    }
+}
+
+@media (max-width:700px){
+    h2{
+        font-size:52px;
+    }
+}
+
+@media (max-width:365px){
+    h2{
+        font-size:44px;
+    }
+    section{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
