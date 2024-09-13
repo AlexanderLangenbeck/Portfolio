@@ -42,6 +42,7 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        z-index: 10111;
 
         >span{
             display: block;
@@ -56,11 +57,34 @@
 
 }
 
+.navAlternative{
+    top:0;
+    right: 0;
+    left:0;
+    bottom:0;
+    position: absolute;
+    height:100vh;
+    width:100%;
+    background-color: grey;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.95;
+}
+
 @media (max-width: 900px) {
     .welcomeHeader {
         padding: 16px 48px 16px 48px;
         nav {
             display: none;
+            &.checked{
+                display: flex;
+                height:100vh;
+                background-color: grey;
+                z-index: 1002;
+                width:100%;
+            }
         }
         .navIcon{
             display: flex;

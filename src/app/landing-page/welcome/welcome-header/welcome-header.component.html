@@ -7,9 +7,16 @@
         <a href="#contact">Contact</a>
         <a href="">EN | DE</a>
     </nav>
-    <div class="navIcon" id="menu">
+    <div (click)='openWrapper()' class="navIcon" id="menu">
         <span></span>
         <span></span>
         <span></span>
     </div>
+    <nav  class="navAlternative" #navbar>
+        <a (click)="closeWrapper()" href="#aboutMe">About me</a>
+        <a (click)="closeWrapper()" href="#mySkills">Skills</a>
+        <a (click)="closeWrapper()" href="#portfolio">Portfolio</a>
+        <a (click)="closeWrapper()" href="#contact">Contact</a>
+        <a (click)="closeWrapper()" href="">EN | DE</a>
+    </nav>
 </div>
