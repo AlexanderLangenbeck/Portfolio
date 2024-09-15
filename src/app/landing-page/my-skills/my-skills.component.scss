@@ -4,6 +4,7 @@
     display: flex;
     padding: 32px;
     box-sizing: border-box;
+    gap:32px
 }
 
 .iconSection {
@@ -38,6 +39,7 @@
     align-items: flex-end;
     width: 40%;
     margin-right: 10%;
+    text-align: end;
 
     >h2 {
         margin: 0px;
@@ -90,24 +92,6 @@
         }
     }
 }
-
-// @media (max-width:575px){
-//     .iconSection{
-//         width:90%;
-//         gap: 70px;
-//         >.skillBox{
-//             width:30px;
-//             >.icon{
-//                 width:30px;   
-//             }
-//         }
-//     }
-//     .textSection{
-//         >h3{
-//             font-size: 24px;
-//         }
-//     }
-// }
 
 @media (max-width:590px){
     .iconSection{

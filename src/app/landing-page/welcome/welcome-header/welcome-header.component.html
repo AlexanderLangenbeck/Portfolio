@@ -1,22 +1,27 @@
 <div class="welcomeHeader">
-    <div class="name">Ale<span class="greenTheme">x</span>ande<span class="purpleTheme">r</span></div>
-    <nav class="normalNav">
-        <a href="#aboutMe">About me</a>
-        <a href="#mySkills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <a href="">EN | DE</a>
-    </nav>
-    <div (click)='openWrapper()' class="navIcon" id="menu">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="name">
+      Ale<span class="greenTheme">x</span>ande<span class="purpleTheme">r</span>
     </div>
-    <nav  class="navAlternative" #navbar>
-        <a (click)="closeWrapper()" href="#aboutMe">About me</a>
-        <a (click)="closeWrapper()" href="#mySkills">Skills</a>
-        <a (click)="closeWrapper()" href="#portfolio">Portfolio</a>
-        <a (click)="closeWrapper()" href="#contact">Contact</a>
-        <a (click)="closeWrapper()" href="">EN | DE</a>
+  
+    <nav class="normalNav">
+      <a href="#aboutMe">{{ 'ABOUT_ME' | translate }}</a>
+      <a href="#mySkills">{{ 'SKILLS' | translate }}</a>
+      <a href="#portfolio">{{ 'PORTFOLIO' | translate }}</a>
+      <a href="#contact">{{ 'CONTACT' | translate }}</a>
+      <a (click)="switchLanguage()">{{ currentLang }}</a>
     </nav>
-</div>
+  
+    <div (click)="openWrapper()" class="navIcon" id="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <nav class="navAlternative" #navbar>
+      <a (click)="closeWrapper()" href="#aboutMe">{{ 'ABOUT_ME' | translate }}</a>
+      <a (click)="closeWrapper()" href="#mySkills">{{ 'SKILLS' | translate }}</a>
+      <a (click)="closeWrapper()" href="#portfolio">{{ 'PORTFOLIO' | translate }}</a>
+      <a (click)="closeWrapper()" href="#contact">{{ 'CONTACT' | translate }}</a>
+      <a (click)="switchLanguage()">{{ currentLang }}</a>
+    </nav>
+  </div>

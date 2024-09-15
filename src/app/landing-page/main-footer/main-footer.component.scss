@@ -34,6 +34,10 @@ h1{
     gap:32px;
 }
 
+a{
+    cursor: pointer;
+}
+
 @media (max-width:775px){
     .footer{
         flex-direction: column;

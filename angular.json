@@ -40,6 +40,12 @@
             }
           },
           "configurations": {
+            "en":{
+              "localize":["en"]
+            },
+            "de":{
+              "localize":["de"]
+            },
             "production": {
               "budgets": [
                 {

@@ -1,0 +1,35 @@
+{
+  "ABOUT_ME": "Über mich",
+  "SKILLS": "Fähigkeiten",
+  "PORTFOLIO": "Portfolio",
+  "CONTACT": "Kontakt",
+
+  "ABOUT_ME_TITLE": "Über mich",
+  "ABOUT_ME_DESCRIPTION": "Ich bin ein deutschsprachiger Frontend-Entwickler aus Wesel, Deutschland. Angetrieben von den nahezu grenzenlosen Möglichkeiten, die die IT-Welt bietet.",
+  "ABOUT_ME_LOCATION": "Ich bin flexibel, was den Arbeitsort betrifft. Ich kann vor Ort, von zu Hause im Homeoffice oder sogar voll remote arbeiten.",
+  "ABOUT_ME_PASSION": "Ich habe eine große Leidenschaft für das Lernen neuer Technologien und blühe auf, wenn ich Herausforderungen mit kreativen Lösungen angehe. Mit einem scharfen Auge für Details und einem Engagement für hochwertige Arbeit suche ich kontinuierlich nach Möglichkeiten, mein Können zu erweitern und effektiv zu Projekten beizutragen.",
+  "ABOUT_ME_PROFESSION": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu überführen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken.",
+
+  "MY_SKILLS_TITLE": "Fähigkeiten",
+  "MY_SKILLS_DESCRIPTION": "Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+  "MY_SKILLS_LOOKING_FOR": "Auf der Suche nach",
+  "MY_SKILLS_ANOTHER_SKILL": "einer weiteren Fähigkeit",
+  "MY_SKILLS_CONTACT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen weiter auszubauen.",
+  "MY_SKILLS_GET_IN_TOUCH": "In Kontakt treten",
+
+  "PORTFOLIO_DESCRIPTION_0":"Ein Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+  "PORTFOLIO_DESCRIPTION_1":"Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Sammeln Sie Münzen und finden Sie Flaschen, um gegen die Killerhühner zu kämpfen.",
+
+  "CONTACT_TITLE": "Kontakt",
+  "CONTACT_SUBTITLE": "Haben Sie ein Problem zu lösen?",
+  "CONTACT_DESCRIPTION": "Kontaktieren Sie mich über dieses Formular, ich freue mich darauf, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+  "CONTACT_FORM_NAME": "Ihr Name",
+  "CONTACT_FORM_EMAIL": "Ihre E-Mail",
+  "CONTACT_FORM_MESSAGE": "Ihre Nachricht",
+  "CONTACT_FORM_NAME_ERROR": "Bitte geben Sie einen Namen ein",
+  "CONTACT_FORM_EMAIL_ERROR": "Bitte geben Sie eine E-Mail ein",
+  "CONTACT_FORM_MESSAGE_ERROR": "Bitte geben Sie eine Nachricht ein",
+  "CONTACT_PP_AGREE_FIRST": "Ich habe die",
+  "CONTACT_PP_AGREE_LINK":"Datenschutzbestimmungen",
+  "CONTACT_PP_AGREE_LAST":"gelesen und stimme der Verarbeitung meiner Daten zu"
+}

@@ -7,7 +7,7 @@ import { MySkillsComponent } from './landing-page/my-skills/my-skills.component'
 import { PortfolioComponent } from './landing-page/portfolio/portfolio.component';
 import { MainFooterComponent } from './landing-page/main-footer/main-footer.component';
 import { ContactComponent } from './landing-page/contact/contact.component';
-import { Firestore } from '@angular/fire/firestore';
+
 
 @Component({
   selector: 'app-root',
@@ -26,7 +26,7 @@ import { Firestore } from '@angular/fire/firestore';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  firestore: Firestore = inject(Firestore);
+ 
   
   title = 'Portfolio';
 }

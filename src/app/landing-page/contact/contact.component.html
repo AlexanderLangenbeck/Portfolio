@@ -1,7 +1,7 @@
 <section class="contact">
     <img class="greenThemeImg" src="./../../../assets/img/greenTheme.png" alt="">
     <div class="headlineContainer">
-        <h2>Contact</h2>
+        <h2>{{ 'CONTACT_TITLE' | translate }}</h2>
         <div class="greenLine"></div>
     </div>
 
@@ -10,18 +10,15 @@
         <div class="contactInfoContainer">
             <div class="subHeadLineContainer">
                 <div class="purpleLine"></div>
-                <h3>Got a problem to solve?</h3>
+                <h3>{{ 'CONTACT_SUBTITLE' | translate }}</h3>
             </div>
             <div class="textContainer">
-                <span>
-                    Contact me through this form, I am interested in hearing from you,
-                    knowing your ideas and contributing to your projects with my work.
-                </span>
+                <span>{{ 'CONTACT_DESCRIPTION' | translate }}</span>
             </div>
             <div class="textContainer">
                 <div class="contactMeContainter">
-                    <span>Need a Frontend developer?</span>
-                    <b>Contact me!</b>
+                    <span>{{ 'CONTACT_SUBTITLE' | translate }}</span>
+                    <b>{{ 'CONTACT_TITLE' | translate }}!</b>
                 </div>
             </div>
         </div>
@@ -31,19 +28,20 @@
             <input #email="ngModel" [(ngModel)]="contactData.email" name="email" class="smallInput" id="email" type="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" class="bigInput" id="message" type="text" placeholder="Your Message" required></textarea>
             @if(!name.valid && name.touched){
-                <span>Pleas enter a Name</span>
+                <span>{{ 'CONTACT_FORM_NAME_ERROR' | translate }}</span>
             }
             @if(!email.valid && email.touched){
-                <span>Pleas enter a email</span>
+                <span>{{ 'CONTACT_FORM_EMAIL_ERROR' | translate }}</span>
             }
             @if(!message.valid && message.touched){
-                <span>Pleas enter a message</span>
+                <span>{{ 'CONTACT_FORM_MESSAGE_ERROR' | translate }}</span>
             }
             <div class="ppAgreeContainer">
                 <img id="checkbox" (click)='checked()' class="checkbox" [src]="isChecked ? 'assets/img/checkBoxChecked.png' : 'assets/img/checkBoxUnchecked.png'"alt="">
                 <span class="ppAgreeText">
-                    I've read the <span class="ppImportant">privacy policy</span> and agree to the processing of my data as
-                    outlined.
+                    <span>{{ 'CONTACT_PP_AGREE_FIRST' | translate }} </span>
+                    <span class="ppImportant">{{ 'CONTACT_PP_AGREE_LINK' | translate }} </span> 
+                    <span>{{ 'CONTACT_PP_AGREE_LAST' | translate }}</span>.
                 </span>
             </div>
             <button type="submit" class="submitButton" [ngClass]="{'checked':isChecked}">Send message</button>
