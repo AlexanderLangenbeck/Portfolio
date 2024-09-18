@@ -1,7 +1,7 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { WelcomeHeaderComponent } from './../../welcome/welcome-header/welcome-header.component';
+import { WelcomeHeaderComponent } from '../../../shared/welcome-header/welcome-header.component';
 
 
 @Component({
@@ -23,13 +23,21 @@ export class ProjectComponent{
       img:'join.png',
       title:'Join',
       skills: 'HTML | CSS | Firebase',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and catergories',
+      description: 'PORTFOLIO_DESCRIPTION_0',
+      links:{
+        github:'https://join.alexanderlangenbeck.de',
+        liveTest:'https://github.com/AlexanderLangenbeck/Join'
+      }
     },
     {
       img:'polloloco.png',
       title:'El Pollo Loco',
       skills: 'Javascript | HTML | CSS',
-      description:'A simple Jump-and-Run game based on an object-oriented approach. Collect coins and find some bottles to fight against the killer chickens',
+      description:'PORTFOLIO_DESCRIPTION_1',
+      links:{
+        github:'https://ellpolloloco.alexanderlangenbeck.de',
+        liveTest:'https://github.com/AlexanderLangenbeck/El-Pollo-Loco'
+      }
     }
   ];
 

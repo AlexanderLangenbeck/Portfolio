@@ -1,32 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WelcomeComponent } from './landing-page/welcome/welcome.component';
-import { AboutMeComponent } from './landing-page/about-me/about-me.component';
-import { MySkillsComponent } from './landing-page/my-skills/my-skills.component';
-import { PortfolioComponent } from './landing-page/portfolio/portfolio.component';
-import { MainFooterComponent } from './landing-page/main-footer/main-footer.component';
-import { ContactComponent } from './landing-page/contact/contact.component';
+import { MainFooterComponent } from './shared/main-footer/main-footer.component';
+import { WelcomeHeaderComponent } from './shared/welcome-header/welcome-header.component';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    CommonModule, 
-    RouterOutlet, 
-    WelcomeComponent, 
-    AboutMeComponent, 
-    MySkillsComponent, 
-    PortfolioComponent,
-    MainFooterComponent,
-    ContactComponent,
-  ],
+  imports: [WelcomeHeaderComponent, MainFooterComponent ,RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
  
   
-  title = 'Portfolio';
+  title = 'AlexanderLangenbeck';
 }

@@ -5,7 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { MainFooterComponent } from './main-footer/main-footer.component';
+import { MainFooterComponent } from '../shared/main-footer/main-footer.component';
 import { ContactComponent } from './contact/contact.component';
 
 @Component({

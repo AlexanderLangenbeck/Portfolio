@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WelcomeFooterComponent } from './welcome-footer/welcome-footer.component';
-import { WelcomeHeaderComponent } from './welcome-header/welcome-header.component';
+import { WelcomeHeaderComponent } from '../../shared/welcome-header/welcome-header.component';
 
 @Component({
   selector: 'app-welcome',

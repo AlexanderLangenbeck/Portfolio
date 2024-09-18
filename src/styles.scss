@@ -1,23 +1,49 @@
-$greenTheme: #70E61C; 
+$greenTheme: #70E61C;
 $purpleTheme: #9747FF;
 
-*{
+* {
     scroll-behavior: smooth !important;
 }
 
-body{
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #141D2F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $purpleTheme;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9e54ff;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body {
     margin: 0;
     font-family: 'Poppins';
     background-color: #141D2F;
-    color:white;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+    // max-width: 1920px;
+    
 }
 
-h2{
+h2 {
     font-size: 90px;
 }
 
-section{
-    width:100%;
+section {
+    max-width:1920px;
     padding-bottom: 64px;
     padding-top: 64px;
 }
@@ -30,12 +56,8 @@ section{
     color: #9747FF;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('./assets/fonts/Poppins-Black.ttf') format('truetype');
-    font-weight: bold;
-    font-style: bold;
-}
+
+
 
 @font-face {
     font-family: 'Poppins';
@@ -44,23 +66,31 @@ section{
     font-style: normal;
 }
 
-@media only screen and (max-width: 1255px){
-    h2{
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@media only screen and (max-width: 1255px) {
+    h2 {
         font-size: 70px;
     }
 }
 
-@media (max-width:700px){
-    h2{
-        font-size:52px;
+@media (max-width:700px) {
+    h2 {
+        font-size: 52px;
     }
 }
 
-@media (max-width:365px){
-    h2{
-        font-size:44px;
+@media (max-width:365px) {
+    h2 {
+        font-size: 45px;
     }
-    section{
+
+    section {
         padding-top: 24px;
         padding-bottom: 24px;
     }

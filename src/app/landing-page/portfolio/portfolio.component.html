@@ -1,10 +1,7 @@
 <section>
-    <img class="imgTheme purpleThemeImg" src="./../../../assets/img/purpleTheme2.png" alt="">
+    <img class="imgTheme" src="./../../../assets/img/purpleTheme2.png" alt="">
     <h2>Portfolio</h2>
-    <span>
-        Explore a selection of my work here -
-        interact with projects to see my skills in action
-    </span>
+    <span>{{ 'PORTFOLIO_HEADLINE' | translate}}</span>
     <div class="projectsContainer">
         <div class="projects" *ngFor="let project of myProjects.projects; let i = index; trackBy: trackByProjectTitle">
             <ng-container *ngIf="i % 2 === 0">
@@ -12,10 +9,10 @@
                 <div class="textPart">
                     <div class="title">{{project.title}}</div>
                     <div class="skills">{{project.skills}}</div>
-                    <div class="description">{{ 'PORTFOLIO_DESCRIPTION_' + i | translate }}</div>
+                    <div class="description">{{ project.description | translate }}</div>
                     <div class="buttonContainer">
-                        <a>Live test</a>
-                        <a href="https://github.com/AlexanderLangenbeck/Join" class="gitHubButton">Github</a>
+                        <a target="_blank" href="{{project.links.github}}" class="lTest">Live test</a>
+                        <a target="_blank" href="{{project.links.liveTest}}" class="gitHubButton">Github</a>
                     </div>
                 </div>
             </ng-container>
@@ -23,10 +20,10 @@
                 <div class="textPart">
                     <div class="title">{{project.title}}</div>
                     <div class="skills">{{project.skills}}</div>
-                    <div class="description">{{ 'PORTFOLIO_DESCRIPTION_' + i | translate }}</div>
+                    <div class="description">{{ project.description | translate }}</div>
                     <div class="buttonContainer">
-                        <a>Live test</a>
-                        <a href="https://github.com/AlexanderLangenbeck/El-Pollo-Loco" class="gitHubButton">Github</a>
+                        <a target="_blank" href="{{project.links.github}}" class="lTest">Live test</a>
+                        <a target="_blank" href="{{project.links.liveTest}}" class="gitHubButton">Github</a>
                     </div>
                 </div>
                 <img src="assets/img/{{project.img}}" alt="">

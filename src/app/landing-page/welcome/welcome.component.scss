@@ -16,6 +16,21 @@
     }
 }
 
+.imgTheme {
+    position: absolute;
+    margin: 0;
+    width: 816px;
+    top: 102px;
+}
+
+.purpleThemeImg {
+    right: -500px;
+} 
+
+.greenThemeImg {
+    left: -522px;
+}
+
 
 .welcomeContainer {
     display: flex;
@@ -25,19 +40,7 @@
     width: 80%;
     padding-top: 128px;
 
-    >.imgTheme {
-        position: absolute;
-        width: 816px;
-        top: 102px;
-    }
-
-    .purpleThemeImg {
-        right: -500px;
-    }
-
-    .greenThemeImg {
-        left: -522px;
-    }
+    
 }
 
 .welcomeText {
@@ -84,7 +87,7 @@
         text-decoration: none;
         background-color: $greenTheme;
         color: white;
-        font-weight: bold;
+        font-size: 32px;
 
         &:hover {
             cursor: pointer;
@@ -94,6 +97,7 @@
 }
 
 @media only screen and (max-width: 1560px){
+    
     .welcomeText{
         >.headlineStart {
             font-size: 80px;
@@ -138,6 +142,11 @@
 }
 
 @media (max-width: 900px){
+    .buttonConainer{
+        >.button{
+            font-size: 16px;
+        }
+    }
     .welcomeText{
         >.headlineStart {
             font-size: 40px;
@@ -155,10 +164,10 @@
 }
 
 @media (max-width:750px){
-    .welcomeContainer {
     
-        >.imgTheme {
-            width: 550px;
+    
+        .imgTheme {
+            width: 450px;
             top: 102px;
         }
     
@@ -167,9 +176,9 @@
         }
     
         .greenThemeImg {
-            left: -380px;
+            left: -280px;
         }
-    }
+    
 }
 
 @media (max-width: 700px){
@@ -180,7 +189,7 @@
         }
         >.headline{
             >.fullName{
-                font-size: 30px;
+                font-size: 29px;
             }
             >.jobTitle {
                 font-weight: bold;
@@ -193,12 +202,7 @@
 
 @media (max-width:500px){
     .welcomeContainer {
-        >.imgTheme {
-            width: 400px;
-        }
-        .greenThemeImg {
-            left: -280px;
-        }
+       
         >.welcomeText{
             >.headlineStart {
                 font-size: 20px;
@@ -209,6 +213,36 @@
                 }
                 >.jobTitle {
                     font-size: 18px;
+                }
+                
+            }
+        }
+    
+    }
+    .imgTheme {
+        width: 400px;
+    }
+    .greenThemeImg {
+        left: -280px;
+    }
+}
+
+@media(max-width:350px){
+    .welcomeContainer {
+       
+        >.welcomeText{
+            >.headlineStart {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            >.headline{
+                >.fullName{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                >.jobTitle {
+                    font-size: 16px;
+                    font-weight: 500;
                 }
                 
             }

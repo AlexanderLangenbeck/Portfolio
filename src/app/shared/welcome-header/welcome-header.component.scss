@@ -1,4 +1,4 @@
-@import './../../../../styles.scss';
+@import './../../../styles.scss';
 
 .welcomeHeader {
     position: fixed;
@@ -13,9 +13,12 @@
     z-index: 300;
 
     >.name {
-        color: white;
-        font-weight: bold;
-        font-size: 28px;
+        >a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+        }
     }
 
     >.normalNav {
@@ -28,6 +31,7 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
+            cursor: pointer;
 
             &:hover {
                 color: $purpleTheme;
@@ -71,6 +75,7 @@
     justify-content: center;
     flex-direction: column;
     opacity: 0.95;
+
     >a {
         font-size: 23px;
         text-decoration: none;
@@ -89,14 +94,6 @@
 
         >.normalNav {
             display: none;
-
-            // &.checked {
-            //     display: flex;
-            //     height: 100vh;
-            //     background-color: grey;
-            //     z-index: 1002;
-            //     width: 100%;
-            // }
         }
 
         >.navIcon {

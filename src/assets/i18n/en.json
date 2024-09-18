@@ -17,6 +17,7 @@
   "MY_SKILLS_CONTACT": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
   "MY_SKILLS_GET_IN_TOUCH": "Get in touch",
 
+  "PORTFOLIO_HEADLINE":"Explore a selection of my work here - interact with projects to see my skills in action",
   "PORTFOLIO_DESCRIPTION_0":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and catergories",
   "PORTFOLIO_DESCRIPTION_1":"A simple Jump-and-Run game based on an object-oriented approach. Collect coins and find some bottles to fight against the killer chickens",
 
@@ -31,5 +32,11 @@
   "CONTACT_FORM_MESSAGE_ERROR": "Please enter a message",
   "CONTACT_PP_AGREE_FIRST": "I've read the",
   "CONTACT_PP_AGREE_LINK":"privacy policy",
-  "CONTACT_PP_AGREE_LAST":"and agree to the processing of my data"
+  "CONTACT_PP_AGREE_LAST":"and agree to the processing of my data",
+
+  "IMPINT_IMPRINT": "Imprint",
+  "IMPRINT_DISCLAIMER": "Disclaimer:",
+  "IMPRINT_CONTENT_LIABILITY": "Liability for Content: Despite careful examination, we assume no liability for the accuracy, completeness, and timeliness of the content.",
+  "IMPRINT_LINK_LIABILITY": "Liability for Links: The operators of external links are solely responsible for their content.",
+  "IMPRINT_CONTENT_RESPONSIBLE": "Responsible for Content"
 }

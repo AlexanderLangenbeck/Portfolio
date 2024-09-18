@@ -1,0 +1,64 @@
+@import './../../styles.scss';
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 32px;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    >p{
+        margin: 0;
+        
+    }
+}
+
+p{
+    text-align: center;
+}
+
+@media (max-width:750px) {
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    section{
+        padding: 16px;
+    }
+}
+
+@media (max-width:450px) {
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    section{
+        padding: 8px;
+    }
+}

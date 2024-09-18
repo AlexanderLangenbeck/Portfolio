@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { WelcomeHeaderComponent } from './../welcome/welcome-header/welcome-header.component';
+import { WelcomeHeaderComponent } from '../../shared/welcome-header/welcome-header.component';
 
 @Component({
   selector: 'app-about-me',

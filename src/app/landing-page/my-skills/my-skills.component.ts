@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { SkillsComponent } from '../models/skills/skills.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { WelcomeHeaderComponent } from './../welcome/welcome-header/welcome-header.component';
+import { WelcomeHeaderComponent } from '../../shared/welcome-header/welcome-header.component';
 
 
 @Component({

@@ -17,6 +17,7 @@
   "MY_SKILLS_CONTACT": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen weiter auszubauen.",
   "MY_SKILLS_GET_IN_TOUCH": "In Kontakt treten",
 
+  "PORTFOLIO_HEADLINE":"Hier kannst du eine Auswahl meiner bisherigen Projekte sehen und testen",
   "PORTFOLIO_DESCRIPTION_0":"Ein Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
   "PORTFOLIO_DESCRIPTION_1":"Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Sammeln Sie Münzen und finden Sie Flaschen, um gegen die Killerhühner zu kämpfen.",
 
@@ -31,5 +32,11 @@
   "CONTACT_FORM_MESSAGE_ERROR": "Bitte geben Sie eine Nachricht ein",
   "CONTACT_PP_AGREE_FIRST": "Ich habe die",
   "CONTACT_PP_AGREE_LINK":"Datenschutzbestimmungen",
-  "CONTACT_PP_AGREE_LAST":"gelesen und stimme der Verarbeitung meiner Daten zu"
+  "CONTACT_PP_AGREE_LAST":"gelesen und stimme der Verarbeitung meiner Daten zu",
+
+  "IMPINT_IMPRINT": "Impressum",
+  "IMPRINT_DISCLAIMER": "Haftungsausschluss:",
+  "IMPRINT_CONTENT_LIABILITY": "Haftung für Inhalte: Trotz sorgfältiger Prüfung übernehmen wir keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte.",
+  "IMPRINT_LINK_LIABILITY": "Haftung für Links: Für die Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.",
+  "IMPRINT_CONTENT_RESPONSIBLE": "Verantwortlich für den Inhalt"
 }

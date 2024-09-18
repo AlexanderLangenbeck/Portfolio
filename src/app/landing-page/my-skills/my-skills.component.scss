@@ -57,14 +57,14 @@
     }
 }
 
-.giTButton {
+.getiTouchButton {
     text-decoration: none;
     margin-top: 32px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
     background-color: $greenTheme;
     color: white;
-    font-weight: bold;
+    font-size: 24px;
 
     &:hover {
         background-color: $purpleTheme;
@@ -79,12 +79,12 @@
     }
 
     .iconSection {
-        width: 80%;
+        width: 90%;
         margin-left: 0;
     }
 
     .textSection {
-        width: 80%;
+        width: 100%;
         margin-right: 0;
         align-items: center;
         >span{
@@ -94,12 +94,15 @@
 }
 
 @media (max-width:590px){
+    .mySkills{
+        padding: 0;
+    }
     .iconSection{
         
         >.skillBox{
-            width:24px;
+            width:48px;
             >.icon{
-                width:24px;   
+                width:48px;   
             }
         }
     }
@@ -113,31 +116,15 @@
 @media (max-width:520px){
     .iconSection{
         gap: 60px;
-        >.skillBox{
-            width:20px;
-            >.icon{
-                width:20px;   
-            }
-            >div{
-                font-size: 12px;
-            }
-        }
+       
     }
 }
 
 @media (max-width:520px){
     .iconSection{
         gap: 60px;
-        width:100%;
-        >.skillBox{
-            width:18px;
-            >.icon{
-                width:18px;   
-            }
-            >div{
-                font-size: 12px;
-            }
-        }
+        width:90%;
+        
     }
     .textSection{
         >h3{

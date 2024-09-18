@@ -1,5 +1,6 @@
+<img class="greenThemeImg" src="./../../../assets/img/greenTheme.png" alt="">
 <section class="contact">
-    <img class="greenThemeImg" src="./../../../assets/img/greenTheme.png" alt="">
+    
     <div class="headlineContainer">
         <h2>{{ 'CONTACT_TITLE' | translate }}</h2>
         <div class="greenLine"></div>
@@ -24,27 +25,36 @@
         </div>
 
         <form (ngSubmit)="onSubmit(contactForm)" class="inputContainer" #contactForm="ngForm">
-            <input #name="ngModel" [(ngModel)]="contactData.name" name="name" class="smallInput" id="name" type="text" placeholder="Your Name" required>
-            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" class="smallInput" id="email" type="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" class="bigInput" id="message" type="text" placeholder="Your Message" required></textarea>
+            <input #name="ngModel" [(ngModel)]="contactData.name" name="name" class="smallInput" id="name" type="text"
+                placeholder="Your Name" required>
+            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" class="smallInput" id="email"
+                type="email" placeholder="Your email" required
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" class="bigInput"
+                id="message" type="text" placeholder="Your Message" required></textarea>
             @if(!name.valid && name.touched){
-                <span>{{ 'CONTACT_FORM_NAME_ERROR' | translate }}</span>
+            <span class="errorText">{{ 'CONTACT_FORM_NAME_ERROR' | translate }}</span>
             }
             @if(!email.valid && email.touched){
-                <span>{{ 'CONTACT_FORM_EMAIL_ERROR' | translate }}</span>
+            <span class="errorText">{{ 'CONTACT_FORM_EMAIL_ERROR' | translate }}</span>
             }
             @if(!message.valid && message.touched){
-                <span>{{ 'CONTACT_FORM_MESSAGE_ERROR' | translate }}</span>
+            <span class="errorText">{{ 'CONTACT_FORM_MESSAGE_ERROR' | translate }}</span>
             }
             <div class="ppAgreeContainer">
-                <img id="checkbox" (click)='checked()' class="checkbox" [src]="isChecked ? 'assets/img/checkBoxChecked.png' : 'assets/img/checkBoxUnchecked.png'"alt="">
+                <img id="checkbox" (click)='checked()' class="checkbox"
+                    [src]="isChecked ? 'assets/img/checkBoxChecked.png' : 'assets/img/checkBoxUnchecked.png'" alt="">
                 <span class="ppAgreeText">
                     <span>{{ 'CONTACT_PP_AGREE_FIRST' | translate }} </span>
-                    <span class="ppImportant">{{ 'CONTACT_PP_AGREE_LINK' | translate }} </span> 
+                    <span routerLink="/privacyPolicy" class="ppImportant">{{ 'CONTACT_PP_AGREE_LINK' | translate }}
+                    </span>
                     <span>{{ 'CONTACT_PP_AGREE_LAST' | translate }}</span>.
                 </span>
             </div>
             <button type="submit" class="submitButton" [ngClass]="{'checked':isChecked}">Send message</button>
+            <div  class="goUpButtonContainer">
+                <a href="#welcome"><img class="goUpButton" src="./../../../assets/img/goUpButton.png" alt=""></a>
+            </div>
         </form>
     </div>
 </section>

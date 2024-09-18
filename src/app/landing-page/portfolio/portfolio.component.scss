@@ -35,8 +35,8 @@ section {
         border-radius: 10px;
         background-color: $greenTheme;
         color: white;
-        font-weight: bold;
         text-decoration: none;
+        font-size: 24px;
 
         &:hover {
             cursor: pointer;
@@ -89,6 +89,11 @@ section {
 
         >.description {
             font-size: 16px;
+        }
+        >.buttonContainer{
+            >.lTest{
+                white-space: nowrap;
+            }
         }
     }
 }
@@ -143,6 +148,13 @@ section {
             >.projects {
                 >img {
                     width: 325px;
+                }
+                >.textPart{
+                  >.buttonContainer{
+                    >a{
+                        font-size: 23px;
+                    }
+                  }
                 }
             }
         }
