@@ -1,5 +1,15 @@
 @import './../../../styles.scss';
 
+.headerBackground{
+    position: fixed;
+    z-index: 299;
+    background-color: #141D2F;
+    right:0;
+    left:0;
+    height:90px;
+    display: none;
+}
+
 .welcomeHeader {
     position: fixed;
     width: 100%;
@@ -75,6 +85,7 @@
     justify-content: center;
     flex-direction: column;
     opacity: 0.95;
+    z-index: 1000;
 
     >a {
         font-size: 23px;
@@ -85,6 +96,13 @@
         &:hover {
             color: $purpleTheme;
         }
+    }
+}
+
+
+@media (min-width:1920px) {
+    .headerBackground{
+        display: block;
     }
 }
 

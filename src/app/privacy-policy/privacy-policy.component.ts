@@ -15,9 +15,7 @@ export class PrivacyPolicyComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
         window.scrollTo(0, 0);
-      }
     });
   }
 

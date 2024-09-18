@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -25,5 +25,6 @@ import { ContactComponent } from './contact/contact.component';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+
 
 }

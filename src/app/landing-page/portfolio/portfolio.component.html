@@ -5,8 +5,8 @@
     <div class="projectsContainer">
         <div class="projects" *ngFor="let project of myProjects.projects; let i = index; trackBy: trackByProjectTitle">
             <ng-container *ngIf="i % 2 === 0">
-                <img src="assets/img/{{project.img}}" alt="">
-                <div class="textPart">
+                <img data-aos="fade-right" src="assets/img/{{project.img}}" alt="">
+                <div data-aos="fade-right" class="textPart">
                     <div class="title">{{project.title}}</div>
                     <div class="skills">{{project.skills}}</div>
                     <div class="description">{{ project.description | translate }}</div>
@@ -17,7 +17,7 @@
                 </div>
             </ng-container>
             <ng-container *ngIf="i % 2 !== 0">
-                <div class="textPart">
+                <div data-aos="fade-left" class="textPart">
                     <div class="title">{{project.title}}</div>
                     <div class="skills">{{project.skills}}</div>
                     <div class="description">{{ project.description | translate }}</div>
@@ -26,7 +26,7 @@
                         <a target="_blank" href="{{project.links.liveTest}}" class="gitHubButton">Github</a>
                     </div>
                 </div>
-                <img src="assets/img/{{project.img}}" alt="">
+                <img data-aos="fade-left" src="assets/img/{{project.img}}" alt="">
             </ng-container>
         </div>
     </div>

@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     padding-top: 0px;
+    max-height: 1440px;
 
     >.profileArea {
         margin-top: 128px;
@@ -14,6 +15,23 @@
         font-size: 32px;
         color: white;
     }
+
+    >.imgThemeMobile {
+        position: absolute;
+        margin: 0;
+        width: 816px;
+        top: 102px;
+    }
+    
+    >.purpleThemeImgMobile {
+        right: -500px;
+    } 
+    
+    >.greenThemeImgMobile {
+        left: -522px;
+    }
+    
+
 }
 
 .imgTheme {
@@ -95,6 +113,23 @@
         }
     }
 }
+@media(min-width:1921px){
+    .imgThemeMobile{
+        display: none;
+    }
+}
+
+@media(max-width:1920px){
+    .imgTheme{
+        display: none;
+    }
+    .purpleThemeImg{
+        display: none;
+    }
+    .greenThemeImg{
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 1560px){
     
@@ -165,19 +200,20 @@
 
 @media (max-width:750px){
     
-    
-        .imgTheme {
+    .welcome{
+        .imgThemeMobile {
             width: 450px;
             top: 102px;
         }
     
-        .purpleThemeImg {
+        .purpleThemeImgMobile {
             right: -290px;
         }
     
-        .greenThemeImg {
+        .greenThemeImgMobile {
             left: -280px;
         }
+    }
     
 }
 
@@ -201,8 +237,16 @@
 }
 
 @media (max-width:500px){
+    .welcome{
+        .imgThemeMobile {
+            width: 400px;
+        }
+        .greenThemeImgMobile {
+            left: -280px;
+        }
+    }
     .welcomeContainer {
-       
+        
         >.welcomeText{
             >.headlineStart {
                 font-size: 20px;
@@ -219,12 +263,7 @@
         }
     
     }
-    .imgTheme {
-        width: 400px;
-    }
-    .greenThemeImg {
-        left: -280px;
-    }
+    
 }
 
 @media(max-width:350px){

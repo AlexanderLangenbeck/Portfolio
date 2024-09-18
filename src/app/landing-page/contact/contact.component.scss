@@ -5,6 +5,13 @@
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
+
+    >.greenThemeImgMobile {
+        margin: 0;
+        position: absolute;
+        right: -436px;
+        z-index: 100;
+    }
 }
 
 .greenThemeImg {
@@ -37,7 +44,7 @@
 .contentContainer {
     color: white;
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: start;
     gap: 64px;
 }
@@ -114,7 +121,7 @@
         border: none;
         font-size: 23px;
 
-        &.checked{
+        &.checked {
             background-color: $greenTheme;
         }
 
@@ -123,24 +130,25 @@
         }
     }
 
-    >.goUpButtonContainer{
-        width:100%;
+    >.goUpButtonContainer {
+        width: 100%;
         display: flex;
         justify-content: end;
         cursor: pointer;
     }
 }
 
-.ppImportant{
+.ppImportant {
     font-weight: bold;
     color: $purpleTheme;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         color: $greenTheme;
     }
 }
 
-.errorText{
+.errorText {
     color: rgb(255, 52, 52);
 }
 
@@ -163,6 +171,18 @@ form textarea {
     height: 200px;
     padding-top: 16px;
 
+}
+
+@media(min-width:1921px) {
+    .greenThemeImgMobile {
+        display: none;
+    }
+}
+
+@media(max-width:1920px) {
+    .greenThemeImg {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1020px) {
