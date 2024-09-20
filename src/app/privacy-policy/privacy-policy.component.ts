@@ -16,15 +16,22 @@ export class PrivacyPolicyComponent implements OnInit {
 
   ngOnInit(): void {
 
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
+    
 
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         window.scrollTo(0, 0);
       });
+
+
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100);
+
   }
+
+
+
 
 }
