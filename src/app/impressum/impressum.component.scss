@@ -9,11 +9,14 @@ section{
     width:100%;
     height:$customHeight;
     margin-bottom: 30px;
+    padding:0;
+    margin: 0;
 }
 
 .imprintContent{
     text-align: center;
-    width:80%;
+    width:50%;
+    padding-top:100px;
 }
 
 .contactData{

@@ -21,6 +21,8 @@ export class ContactComponent {
     message: "",
   }
   mailTest = false;
+  isSubmittet = false;
+
 
   post = {
     endPoint: 'https://alexanderlangenbeck.de/sendMail.php',
@@ -32,8 +34,15 @@ export class ContactComponent {
       },
     },
   };
+isSubmitted: any;
 
   onSubmit(ngForm: NgForm) {
+    this.isSubmitted = true;
+
+    setTimeout(()=>{
+      this.isSubmitted = false;
+    },5000)
+
     if (ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -43,7 +52,6 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 

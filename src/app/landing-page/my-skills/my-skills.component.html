@@ -1,9 +1,11 @@
 <section class="mySkills">
     <section class="iconSection">
         @for(skill of mySkills.skills; track skill.name){
-            
+
         <div class="skillBox">
-            <img class="icon" src="assets/img/{{skill.img}}" alt="">
+            <div class="skillBoxImgContainer">
+                <img class="icon" src="assets/img/{{skill.img}}" alt="">
+            </div>
             <div>{{skill.name}}</div>
         </div>
         }
@@ -13,7 +15,8 @@
         <span>
             {{ 'MY_SKILLS_DESCRIPTION' | translate }}
         </span>
-        <h3>{{ 'MY_SKILLS_LOOKING_FOR' | translate }} <span class="purpleTheme">{{ 'MY_SKILLS_ANOTHER_SKILL' | translate }}</span>?</h3>
+        <h3>{{ 'MY_SKILLS_LOOKING_FOR' | translate }} <span class="purpleTheme">{{ 'MY_SKILLS_ANOTHER_SKILL' | translate
+                }}</span>?</h3>
         <span>
             {{ 'MY_SKILLS_CONTACT' | translate }}
         </span>

@@ -16,47 +16,47 @@ export class SkillsComponent {
 
   skills = [
     {
-      img:'html.png',
+      img:'html.svg',
       name:'HTML',
     },
     {
-      img:'css.png',
+      img:'css.svg',
       name:'CSS',
     },
     {
-      img:'javascript.png',
+      img:'javascript.svg',
       name:'JavaScript',
     },
     {
-      img:'typescript.png',
+      img:'typescript.svg',
       name:'TypeScript',
     },
     {
-      img:'angular.png',
+      img:'angular.svg',
       name:'Angular',
     },
     {
-      img:'firebase.png',
+      img:'firebase.svg',
       name:'Firebase',
     },
     {
-      img:'git.png',
+      img:'git.svg',
       name:'GIT',
     },
     {
-      img:'api.png',
+      img:'api.svg',
       name:'Rest-Api',
     },
     {
-      img:'scrum.png',
+      img:'scrum.svg',
       name:'Scrum',
     },
     {
-      img:'materiralDesign.png',
+      img:'materiralDesign.svg',
       name:'Material Design',
     },
     {
-      img:'containuallyLearning.png',
+      img:'containuallyLearning.svg',
       name:'Continually learning',
     },
   ]

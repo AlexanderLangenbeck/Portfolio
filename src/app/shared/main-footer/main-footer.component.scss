@@ -1,19 +1,21 @@
 @import './../../../styles.scss';
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 6px solid  #70E61C;
+    position: relative;
+    border-top: 6px solid #70E61C;
     height: 290px;
     background-color: #141D2F;
     color: white;
+    width:100%;
     font-weight: bold;
     z-index: 301;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     margin: 0;
     font-size: 32px;
 
@@ -27,32 +29,50 @@ h1{
     color: #70E61C;
 }
 
-.cRight{
+.cRight {
     font-size: 23px;
 }
 
-.footerIconContainer{
+.footerIconContainer {
     display: flex;
-    gap:32px;
+    gap: 32px;
 }
 
-a{
+a {
     cursor: pointer;
     text-decoration: none;
     color: white;
-    &:hover{
-        color:$purpleTheme;
+
+    &:hover {
+        color: $purpleTheme;
     }
 }
 
-img{
+img {
     cursor: pointer;
 }
 
-@media (max-width:775px){
+
+.contentFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    max-width: 1920px;
+}
+
+@media(min-width:1921px){
     .footer{
+        width:100vw;
+    }
+    
+}
+
+@media (max-width:775px) {
+    .footer {
         flex-direction: column;
-        >.footerStart{
+
+        >.footerStart {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -60,9 +80,9 @@ img{
     }
 }
 
-@media (max-width:480px){
-    .footer{
-        >.cRight{
+@media (max-width:480px) {
+    .footer {
+        >.cRight {
             font-size: 16px;
         }
     }

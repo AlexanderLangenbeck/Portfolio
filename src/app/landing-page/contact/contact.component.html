@@ -52,9 +52,14 @@
                 </span>
             </div>
             <button type="submit" class="submitButton" [ngClass]="{'checked':isChecked}">Send message</button>
+            
             <div  class="goUpButtonContainer">
                 <a href="#welcome"><img class="goUpButton" src="./../../../assets/img/goUpButton.png" alt=""></a>
             </div>
+            <div *ngIf="isSubmitted" class="confirmMessage">
+                Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
+            </div>
         </form>
+        
     </div>
 </section>

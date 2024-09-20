@@ -100,9 +100,12 @@
 }
 
 
-@media (min-width:1920px) {
+@media (min-width:1921px) {
     .headerBackground{
         display: block;
+    }
+    .welcomeHeader{
+        padding: 24px 0px 24px 0px;
     }
 }
 
